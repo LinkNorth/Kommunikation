@@ -4,6 +4,6 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "$(npm bin)/mocha"
+    "test": "mocha"
   }
 }
