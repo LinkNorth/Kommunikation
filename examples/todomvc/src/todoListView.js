@@ -1,11 +1,12 @@
-import todoView from './todoView.js';
+import todoView from './todoView';
+
 export default {
-	render: function(todos) {
-		let ul = document.createElement('ul');
-		for (let todo of todos) {
-			let renderedTodo = todoView.render(todo);
-			ul.appendChild(renderedTodo);
-		}
-    return ul
-	}
-}
+  render: function(todos) {
+	  const ul = document.createElement('ul');
+	  for (let todo of todos) {
+	    const renderedTodo = todoView.render(todo);
+		  ul.appendChild(renderedTodo);
+	  }
+    return ul;
+	},
+};

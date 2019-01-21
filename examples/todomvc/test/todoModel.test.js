@@ -1,5 +1,6 @@
-const assert = require('assert');
-const model = require('../src/todoModel.js');
+import assert from 'assert';
+import model from '../src/todoModel.js';
+
 describe('todoModel', function() {
 
   afterEach(function() {

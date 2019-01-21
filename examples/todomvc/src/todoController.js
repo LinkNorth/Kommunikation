@@ -1,11 +1,11 @@
 import todoListView from './todoListView.js';
 import todoModel from './todoModel.js';
-let form = document.querySelector('form');
-let todoList = document.querySelector('.todoList');
+const form = document.querySelector('form');
+const todoList = document.querySelector('.todoList');
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-	let input = document.querySelector('input');
-	let title = input.value;
+	const input = document.querySelector('input');
+	const title = input.value;
 	todoModel.addTodo(title);
   todoList.innerHTML = "";
   todoList.appendChild(
