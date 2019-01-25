@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   groupBy: function(arr, key) {
     let group = {};
     for (let x of arr) {
